@@ -31,11 +31,11 @@ jobs:
       runs-on: self-hosted
       steps:
         - name: Pull Image from Docker Hub
-          run: docker pull ${{ secrets.DOCKER_USERNAME }}/beer-brewery-basic:latest
+          run: docker pull anil0331/beer-brewery-basic:latest
         - name: Delete old container
           run: docker rm -f beer-brewery-basic
         - name: Run docker container
-          run: docker run -d --name beer-brewery-basic -p 8080:8080 ${{ secrets.DOCKER_USERNAME }}/beer-brewery-basic:latest
+          run: docker run -d -p 8080:8080 --name beer-brewery-basic anil0331/beer-brewery-basic:latest
 
 
 
