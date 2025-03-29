@@ -12,4 +12,9 @@ public class BeerBasicController {
     public String hello() {
         return "Hello Beer Brewery!";
     }
+
+    @GetMapping("/welcome")
+    public String welcome() {
+        return "Welcome to Beer Brewery!";
+    }
 }
