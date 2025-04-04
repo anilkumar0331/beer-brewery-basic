@@ -15,6 +15,6 @@ public class BeerBasicController {
 
     @GetMapping("/welcome")
     public String welcome() {
-        return "Welcome to Beer Brewery!";
+        return "Welcome to Beer Brewery Hub!";
     }
 }
